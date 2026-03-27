@@ -1,4 +1,20 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2327,
+          38.71286
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "130808",
+        "MeterNumber": 160444962,
+        "DetectionTime": null
+      }
+    }
+  ]
 }
