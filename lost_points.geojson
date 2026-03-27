@@ -1,4 +1,605 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.55508,
+          38.78672
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "101707",
+        "MeterNumber": "160997139",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.55145,
+          38.79551
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "101711",
+        "MeterNumber": "160997202",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.53664,
+          38.70857
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161610",
+        "MeterNumber": "160444425",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.54998,
+          38.72422
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160507",
+        "MeterNumber": "160960752",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.53162,
+          38.7229
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160907",
+        "MeterNumber": "160960754",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.53476,
+          38.72706
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160402",
+        "MeterNumber": "160960756",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52684,
+          38.70892
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160906",
+        "MeterNumber": "160960766",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52748,
+          38.71705
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160903",
+        "MeterNumber": "160960768",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.539,
+          38.72562
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160404",
+        "MeterNumber": "160960770",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.55029,
+          38.72358
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160809",
+        "MeterNumber": "160960771",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.5423193,
+          38.72501273
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160407",
+        "MeterNumber": "160960772",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51255,
+          38.6908
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162214",
+        "MeterNumber": "160960878",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51334,
+          38.68958
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162205",
+        "MeterNumber": "160960879",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51321,
+          38.69117
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162202",
+        "MeterNumber": "160960880",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.5144,
+          38.68953
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162206",
+        "MeterNumber": "160960881",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52692,
+          38.70007
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161603",
+        "MeterNumber": "160960978",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52707,
+          38.69498
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161608",
+        "MeterNumber": "160960980",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52363,
+          38.69358
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162203",
+        "MeterNumber": "160960981",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51716,
+          38.74544
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "103402",
+        "MeterNumber": "160961276",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52625,
+          38.73928
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "103401",
+        "MeterNumber": "160961277",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51757,
+          38.70805
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161501",
+        "MeterNumber": "160961426",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.53624,
+          38.70852
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161609",
+        "MeterNumber": "160961427",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.53693,
+          38.70857
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161607",
+        "MeterNumber": "160961428",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52527,
+          38.70832
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161502",
+        "MeterNumber": "160961429",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.54085,
+          38.70945
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160905",
+        "MeterNumber": "160961470",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.54099,
+          38.70718
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161604",
+        "MeterNumber": "160961472",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51437,
+          38.70844
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161001",
+        "MeterNumber": "160961474",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51279,
+          38.70858
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "161003",
+        "MeterNumber": "160961477",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52764,
+          38.74478
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "103304",
+        "MeterNumber": "160961546",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52718,
+          38.74551
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "103301",
+        "MeterNumber": "160961547",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51662,
+          38.68969
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162204",
+        "MeterNumber": "160961638",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52246,
+          38.69048
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162208",
+        "MeterNumber": "160961639",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52261,
+          38.6905
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162207",
+        "MeterNumber": "160961640",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52306,
+          38.69061
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162201",
+        "MeterNumber": "160961641",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.52332,
+          38.69049
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "162211",
+        "MeterNumber": "160961700",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.49432,
+          38.72262
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160201",
+        "MeterNumber": "160961958",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.55575,
+          38.77581
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "102005",
+        "MeterNumber": "160997854",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.51223,
+          38.72565
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160303",
+        "MeterNumber": "187961835",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.26933,
+          38.70024
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "141319",
+        "MeterNumber": "196029552",
+        "DetectionTime": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.58295,
+          38.73915
+        ]
+      },
+      "properties": {
+        "ServiceLocation": "160601",
+        "MeterNumber": "160961904",
+        "DetectionTime": null
+      }
+    }
+  ]
 }
