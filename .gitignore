@@ -1,0 +1,8 @@
+# Ignore sensitive and temporary files
+service_locations.csv
+update_lost_meters.py
+*.bat
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db

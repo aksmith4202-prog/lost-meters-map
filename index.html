@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lost Meters Map - Clay Electric</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { height: 100vh; width: 100%; }
+        .password-screen {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .password-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map" style="display:none;"></div>
+
+    <!-- Password Screen -->
+    <div id="password-screen" class="password-screen">
+        <div class="password-box">
+            <h2>Lost Meters Map</h2>
+            <p>Enter password to access:</p>
+            <input type="password" id="password-input" placeholder="Password" style="padding:10px; width:100%; margin-bottom:10px;">
+            <button onclick="checkPassword()" style="padding:10px 20px;">Unlock Map</button>
+            <p id="error-msg" style="color:red; margin-top:10px;"></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const CORRECT_PASSWORD = "terEx!1946";   // ← CHANGE THIS TO YOUR DESIRED PASSWORD
+
+        function checkPassword() {
+            const input = document.getElementById("password-input").value;
+            if (input === CORRECT_PASSWORD) {
+                document.getElementById("password-screen").style.display = "none";
+                document.getElementById("map").style.display = "block";
+                initMap();
+            } else {
+                document.getElementById("error-msg").textContent = "Incorrect password";
+            }
+        }
+
+        function initMap() {
+            var map = L.map('map').setView([38.774746, -88.517168], 12);
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+            }).addTo(map);
+
+            // Load lines
+            fetch('line.geojson')
+                .then(r => r.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function(feature) {
+                            var p = (feature.properties.Phasing || "").toString().trim().toUpperCase();
+                            if (p === "ABC" || p === "CBA") return { color: "#000000", weight: 4, opacity: 0.15 };
+                            else if (p === "A") return { color: "#e74c3c", weight: 4, opacity: 0.15 };
+                            else if (p === "B") return { color: "#2ecc71", weight: 4, opacity: 0.15 };
+                            else if (p === "C") return { color: "#3498db", weight: 4, opacity: 0.15 };
+                            else return { color: "#9b59b6", weight: 4, opacity: 0.15 };
+                        }
+                    }).addTo(map);
+                });
+
+            // Lost meters - bright pink with !
+            var lostLayer = L.geoJSON(null, {
+                pointToLayer: function(feature, latlng) {
+                    var marker = L.circleMarker(latlng, {
+                        radius: 8,
+                        fillColor: "#ff1493",
+                        color: "#fff",
+                        weight: 3,
+                        opacity: 1,
+                        fillOpacity: 0.95
+                    });
+
+                    var icon = L.divIcon({
+                        className: 'lost-marker-icon',
+                        html: '<div style="color: white; font-size: 16px; font-weight: bold; text-align: center; line-height: 20px; margin-top: -3px;">!</div>',
+                        iconSize: [20, 20],
+                        iconAnchor: [10, 10]
+                    });
+
+                    return L.layerGroup([marker, L.marker(latlng, { icon: icon })]);
+                },
+                onEachFeature: function(feature, layer) {
+                    var p = feature.properties;
+                    layer.bindPopup("<b>Lost Meter</b><br>" +
+                        "<strong>Service Location:</strong> " + (p.ServiceLocation || "N/A") + "<br>" +
+                        "<strong>Meter #:</strong> " + (p.MeterNumber || "N/A") + "<br>" +
+                        "<strong>Detection Time:</strong> " + (p.DetectionTime || "N/A"));
+                }
+            }).addTo(map);
+
+            function loadLostPoints() {
+                fetch('lost_points.geojson?' + Date.now())
+                    .then(r => r.json())
+                    .then(data => {
+                        lostLayer.clearLayers();
+                        lostLayer.addData(data);
+                    });
+            }
+
+            loadLostPoints();
+            setInterval(loadLostPoints, 60000);
+        }
+
+        // Allow Enter key on password field
+        document.getElementById("password-input").addEventListener("keypress", function(e) {
+            if (e.key === "Enter") checkPassword();
+        });
+    </script>
+</body>
+</html>
